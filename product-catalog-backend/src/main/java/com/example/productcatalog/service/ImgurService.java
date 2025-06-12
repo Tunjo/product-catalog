@@ -1,4 +1,4 @@
-package com.example.productcatalog.service;
+/* package com.example.productcatalog.service;
 
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.entity.mime.MultipartEntityBuilder;
@@ -6,6 +6,7 @@ import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.core5.http.HttpEntity;
+import org.apache.hc.core5.http.ParseException;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
@@ -42,7 +43,9 @@ public class ImgurService {
                 } else {
                     throw new IOException("Failed to upload image to Imgur: " + jsonObject.toString());
                 }
+            } catch (ParseException e) {
+                throw new IOException("Failed to parse Imgur response", e);
             }
         }
     }
-}
+} */
