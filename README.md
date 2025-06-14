@@ -29,7 +29,7 @@ make run-dev
 ### Build and Start the Project
 
 ```bash
-make run-dev
+make run-dev-build
 ```
 
 - This will rebuild the Docker images for the backend and frontend before starting the services.
