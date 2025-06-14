@@ -24,7 +24,6 @@ make run-dev
 
 - Start the backend on http://localhost:8080
 - Start the frontend on http://localhost:3000
-- Start the PostgreSQL database (if configured)
 
 ### Build and Start the Project
 
