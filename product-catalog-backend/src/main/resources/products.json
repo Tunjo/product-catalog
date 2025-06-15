@@ -4,69 +4,79 @@
     "description": "Fresh red apple",
     "price": 1.5,
     "imageUrl": "https://imgur.com/QvTrpB9",
-    "category": "Food"
+    "category": "Food",
+    "quantity": 5
   },
   {
     "name": "Banana",
     "description": "Ripe yellow banana",
     "price": 0.75,
     "imageUrl": "https://imgur.com/wS73kLG",
-    "category": "Food"
+    "category": "Food",
+    "quantity": 5
   },
   {
     "name": "Laptop",
     "description": "High-performance laptop",
     "price": 1200.0,
     "imageUrl": "https://imgur.com/Yb47hur",
-    "category": "Electronics"
+    "category": "Electronics",
+    "quantity": 5
   },
   {
     "name": "Smartphone",
     "description": "Latest model smartphone",
     "price": 800.0,
     "imageUrl": "https://imgur.com/A2fOJZ3",
-    "category": "Electronics"
+    "category": "Electronics",
+    "quantity": 5
   },
   {
     "name": "T-Shirt",
     "description": "Comfortable cotton t-shirt",
     "price": 15.0,
     "imageUrl": "https://imgur.com/mR4M5WS",
-    "category": "Clothing"
+    "category": "Clothing",
+    "quantity": 5
   },
   {
     "name": "Jeans",
     "description": "Stylish denim jeans",
     "price": 40.0,
     "imageUrl": "https://imgur.com/SDUVDSC",
-    "category": "Clothing"
+    "category": "Clothing",
+    "quantity": 5
   },
   {
     "name": "Novel",
     "description": "Bestselling novel",
     "price": 10.0,
     "imageUrl": "https://via.placeholder.com/150",
-    "category": "Books"
+    "category": "Books",
+    "quantity": 5
   },
   {
     "name": "Cookbook",
     "description": "Delicious recipes",
     "price": 25.0,
     "imageUrl": "https://via.placeholder.com/150",
-    "category": "Books"
+    "category": "Books",
+    "quantity": 5
   },
   {
     "name": "Action Figure",
     "description": "Superhero action figure",
     "price": 20.0,
     "imageUrl": "https://via.placeholder.com/150",
-    "category": "Toys"
+    "category": "Toys",
+    "quantity": 5
   },
   {
     "name": "Puzzle",
     "description": "1000-piece puzzle",
     "price": 15.0,
     "imageUrl": "https://via.placeholder.com/150",
-    "category": "Toys"
+    "category": "Toys",
+    "quantity": 5
   }
 ]
