@@ -3,7 +3,7 @@
     "name": "Apple",
     "description": "Fresh red apple",
     "price": 1.5,
-    "imageUrl": "https://imgur.com/QvTrpB9",
+    "imageUrl": "https://i.imgur.com/QvTrpB9.jpg",
     "category": "Food",
     "quantity": 5
   },
@@ -11,7 +11,7 @@
     "name": "Banana",
     "description": "Ripe yellow banana",
     "price": 0.75,
-    "imageUrl": "https://imgur.com/wS73kLG",
+    "imageUrl": "https://i.imgur.com/wS73kLG.jpg",
     "category": "Food",
     "quantity": 5
   },
@@ -19,7 +19,7 @@
     "name": "Laptop",
     "description": "High-performance laptop",
     "price": 1200.0,
-    "imageUrl": "https://imgur.com/Yb47hur",
+    "imageUrl": "https://i.imgur.com/Yb47hur.jpg",
     "category": "Electronics",
     "quantity": 5
   },
@@ -27,7 +27,7 @@
     "name": "Smartphone",
     "description": "Latest model smartphone",
     "price": 800.0,
-    "imageUrl": "https://imgur.com/A2fOJZ3",
+    "imageUrl": "https://i.imgur.com/A2fOJZ3.jpg",
     "category": "Electronics",
     "quantity": 5
   },
@@ -35,7 +35,7 @@
     "name": "T-Shirt",
     "description": "Comfortable cotton t-shirt",
     "price": 15.0,
-    "imageUrl": "https://imgur.com/mR4M5WS",
+    "imageUrl": "https://i.imgur.com/mR4M5WS.jpg",
     "category": "Clothing",
     "quantity": 5
   },
@@ -43,7 +43,7 @@
     "name": "Jeans",
     "description": "Stylish denim jeans",
     "price": 40.0,
-    "imageUrl": "https://imgur.com/SDUVDSC",
+    "imageUrl": "https://i.imgur.com/SDUVDSC.jpg",
     "category": "Clothing",
     "quantity": 5
   },
@@ -51,7 +51,7 @@
     "name": "Novel",
     "description": "Bestselling novel",
     "price": 10.0,
-    "imageUrl": "https://imgur.com/qz0SKRS",
+    "imageUrl": "https://i.imgur.com/qz0SKRS.jpg",
     "category": "Books",
     "quantity": 5
   },
@@ -59,7 +59,7 @@
     "name": "Cookbook",
     "description": "Delicious recipes",
     "price": 25.0,
-    "imageUrl": "https://imgur.com/843KKKN",
+    "imageUrl": "https://i.imgur.com/843KKKN.jpg",
     "category": "Books",
     "quantity": 5
   },
@@ -67,7 +67,7 @@
     "name": "Action Figure",
     "description": "Superhero action figure",
     "price": 20.0,
-    "imageUrl": "https://imgur.com/KtVLleP",
+    "imageUrl": "https://i.imgur.com/KtVLleP.jpg",
     "category": "Toys",
     "quantity": 5
   },
@@ -75,7 +75,7 @@
     "name": "Puzzle",
     "description": "1000-piece puzzle",
     "price": 15.0,
-    "imageUrl": "https://imgur.com/fEYLdy9",
+    "imageUrl": "https://i.imgur.com/fEYLdy9.jpg",
     "category": "Toys",
     "quantity": 5
   }
