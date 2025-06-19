@@ -1,8 +1,10 @@
-FROM node:18-bullseye AS build
+FROM node:20-bullseye AS build
 WORKDIR /app
 
 COPY package.json yarn.lock ./
 RUN rm -rf node_modules && yarn install --force
+
+RUN yarn add -D tailwindcss postcss autoprefixer
 
 COPY . .
 RUN yarn build
