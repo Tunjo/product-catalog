@@ -28,6 +28,7 @@ public class DataLoader {
     @PostConstruct
     public void loadData() {
         try {
+            System.out.println("DataLoader: Starting data initialization...");
             ObjectMapper mapper = new ObjectMapper();
 
             InputStream categoryStream = getClass().getResourceAsStream("/categories.json");
@@ -46,6 +47,7 @@ public class DataLoader {
                 product.setPrice(new BigDecimal(productData.get("price").toString()));
                 product.setImageUrl((String) productData.get("imageUrl"));
                 product.setCategory(categoryMap.get(productData.get("category")));
+                product.setQuantity((Integer) productData.get("quantity"));
                 productRepository.save(product);
             }
 

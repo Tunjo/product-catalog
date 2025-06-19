@@ -1,9 +1,7 @@
-# Ignore IntelliJ IDEA files
 .idea/
 *.iml
 *.iws
 
-# Ignore Maven/Java build artifacts in the backend folder
 /product-catalog-backend/target/
 
 

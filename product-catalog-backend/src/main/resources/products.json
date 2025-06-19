@@ -51,7 +51,7 @@
     "name": "Novel",
     "description": "Bestselling novel",
     "price": 10.0,
-    "imageUrl": "https://via.placeholder.com/150",
+    "imageUrl": "https://imgur.com/qz0SKRS",
     "category": "Books",
     "quantity": 5
   },
@@ -59,7 +59,7 @@
     "name": "Cookbook",
     "description": "Delicious recipes",
     "price": 25.0,
-    "imageUrl": "https://via.placeholder.com/150",
+    "imageUrl": "https://imgur.com/843KKKN",
     "category": "Books",
     "quantity": 5
   },
@@ -67,7 +67,7 @@
     "name": "Action Figure",
     "description": "Superhero action figure",
     "price": 20.0,
-    "imageUrl": "https://via.placeholder.com/150",
+    "imageUrl": "https://imgur.com/KtVLleP",
     "category": "Toys",
     "quantity": 5
   },
@@ -75,7 +75,7 @@
     "name": "Puzzle",
     "description": "1000-piece puzzle",
     "price": 15.0,
-    "imageUrl": "https://via.placeholder.com/150",
+    "imageUrl": "https://imgur.com/fEYLdy9",
     "category": "Toys",
     "quantity": 5
   }

@@ -1,7 +1,6 @@
 package com.example.productcatalog.model;
 
 import jakarta.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "categories")
@@ -14,9 +13,6 @@ public class Category {
     @Column(nullable = false, unique = true)
     private String name;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Product> products;
-    
     public Long getId() {
         return id;
     }
@@ -31,13 +27,5 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(Set<Product> products) {
-        this.products = products;
     }
 }

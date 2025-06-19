@@ -2,7 +2,6 @@ package com.example.productcatalog.model;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
-import java.util.Set;
 
 @Entity
 @Table(name = "products")
@@ -12,35 +11,19 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String name;
 
-    @Column(length = 1000)
     private String description;
 
-    @Column(nullable = false)
     private BigDecimal price;
 
-    @Column(nullable = false)
     private String imageUrl;
 
-    @Column(nullable = false)
     private Integer quantity;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
-
-    @ManyToMany(mappedBy = "products")
-    private Set<Order> orders;
-
-    public Set<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
-    }
 
     public Long getId() {
         return id;

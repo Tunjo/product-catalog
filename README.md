@@ -32,3 +32,9 @@ make run-dev-build
 ```
 
 - This will rebuild the Docker images for the backend and frontend before starting the services.
+
+## Links
+
+### Swagger docs
+
+- http://localhost:8080/swagger-ui.html
