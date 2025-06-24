@@ -33,8 +33,26 @@ make run-dev-build
 
 - This will rebuild the Docker images for the backend and frontend before starting the services.
 
+### Then container is running
+
+```bash
+make frontend-test
+```
+
+- This will run frontend tests
+
 ## Links
 
 ### Swagger docs
 
 - http://localhost:8080/swagger-ui.html
+
+### H-2 console
+
+- http://localhost:8080/h2-console
+  - JDBC_URL: jdbc:h2:mem:testdb
+
+### PayPal Sandbox user for checking payment in app
+
+- sb-5kkrg43498490@personal.example.com
+- NwMQz#1}

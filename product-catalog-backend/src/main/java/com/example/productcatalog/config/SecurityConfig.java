@@ -11,17 +11,20 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-            .csrf().disable()
-            .authorizeHttpRequests()
-            .requestMatchers("/api/admin/**").hasRole("ADMIN")
-            .anyRequest().permitAll()
-            .and()
-            .httpBasic();
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+        .csrf().disable()
+        .headers(headers -> headers
+            .frameOptions(frameOptions -> frameOptions.sameOrigin())
+        )
+        .authorizeHttpRequests()
+        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+        .anyRequest().permitAll()
+        .and()
+        .httpBasic();
 
-        return http.build();
-    }
+    return http.build();
+}
 
     @Bean
     public PasswordEncoder passwordEncoder() {
