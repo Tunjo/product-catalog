@@ -6,7 +6,7 @@ import ProductSwiper from "../components/ProductSwiper/ProductSwiper";
 import { Product } from "../shared/interfaces/product";
 import { useCartStore } from "../shared/store/cartStore";
 import { useProductStore } from "../shared/store/productStore";
-import ProductDetailModal from "../components/ProductDetailModal/ProductDeatilModal";
+import ProductDetailModal from "../components/ProductDetailModal/ProductDetailModal";
 
 export default function Home() {
   const {

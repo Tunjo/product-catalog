@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { useClickOutside } from "../../shared/hooks/useClickOutside";
 import { Category } from "../../shared/interfaces/product";
 
