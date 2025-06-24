@@ -1,6 +1,7 @@
 # Product Catalog
 
-A full-stack product catalog application with a **backend** (Spring Boot), **frontend** (React). The project is containerized with Docker and managed using a `Makefile`.
+A full-stack product catalog application with a **backend** (Spring Boot) and **frontend** (React).  
+The project is fully containerized with Docker and managed using a `Makefile`.
 
 ---
 
@@ -20,10 +21,10 @@ A full-stack product catalog application with a **backend** (Spring Boot), **fro
 make run-dev
 ```
 
-### This will:
+- Starts the backend at [http://localhost:8080](http://localhost:8080)
+- Starts the frontend at [http://localhost:3000](http://localhost:3000)
 
-- Start the backend on http://localhost:8080
-- Start the frontend on http://localhost:3000
+---
 
 ### Build and Start the Project
 
@@ -31,39 +32,47 @@ make run-dev
 make run-dev-build
 ```
 
-- This will rebuild the Docker images for the backend and frontend before starting the services.
+- Rebuilds Docker images for backend and frontend before starting the services.
 
-### Then container is running
+---
+
+### Run Frontend Tests
 
 ```bash
 make frontend-test
 ```
 
-- This will run frontend tests
+- Runs frontend tests in the container.
 
-## Links
+---
 
-### Swagger docs
+## Useful Links
 
-- http://localhost:8080/swagger-ui.html
+- **Swagger docs:** [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- **Swagger Admin Controller:** [http://localhost:8080/swagger-ui/index.html#/admin-controller](http://localhost:8080/swagger-ui/index.html#/admin-controller)
+- **H2 Console:** [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+  - JDBC URL: `jdbc:h2:mem:testdb`
 
-### H-2 console
+---
 
-- http://localhost:8080/h2-console
-  - JDBC_URL: jdbc:h2:mem:testdb
+## PayPal Sandbox Test User
 
-### PayPal Sandbox user that can be used for PayPal payment
+- Email: `sb-5kkrg43498490@personal.example.com`
+- Password: `NwMQz#1}`
 
-- sb-5kkrg43498490@personal.example.com
-- NwMQz#1}
+---
 
-### Admin-controller
-- http://localhost:8080/swagger-ui/index.html#/admin-controller
-- On admin routes pls use in memory user credentials (that was part that have plan to make frontend admin part and protect product & category create, update and delete methods; TODO: make front part of admin page)
--   Username: adminOGCS
--   Password: adminOGCS123
-- We can use also curl with credentials:
-- Create a New Product (POST)
+## Admin Endpoints
+
+Admin routes are protected with HTTP Basic Auth.  
+Use the following in-memory credentials:
+
+- **Username:** `adminOGCS`
+- **Password:** `adminOGCS123`
+
+You can also use curl for admin actions:
+
+### Create a New Product (POST)
 
 **Endpoint:**  
 `POST /api/admin/products`
@@ -72,6 +81,7 @@ make frontend-test
 HTTP Basic Auth (`adminOGCS` / `adminOGCS123`)
 
 **Request Example:**
+
 ```sh
 curl -X POST "http://localhost:8080/api/admin/products" \
   -u adminOGCS:adminOGCS123 \
@@ -89,3 +99,10 @@ curl -X POST "http://localhost:8080/api/admin/products" \
   }'
 ```
 
+---
+
+## TODO
+
+- Implement frontend admin page for product & category management (create, update, delete).
+
+---
