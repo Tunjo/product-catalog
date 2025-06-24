@@ -63,12 +63,19 @@ make frontend-test
 -   Username: adminOGCS
 -   Password: adminOGCS123
 - We can use also curl with credentials:
-- Create new product:
--  <pre> ```bash curl -X POST \
-  'http://localhost:8080/api/admin/products' \
-  -H 'accept: */*' \
-  -H 'Content-Type: application/json' \
+- Create a New Product (POST)
+
+**Endpoint:**  
+`POST /api/admin/products`
+
+**Authentication:**  
+HTTP Basic Auth (`adminOGCS` / `adminOGCS123`)
+
+**Request Example:**
+```sh
+curl -X POST "http://localhost:8080/api/admin/products" \
   -u adminOGCS:adminOGCS123 \
+  -H "Content-Type: application/json" \
   -d '{
     "name": "Orange",
     "description": "Some lazy description",
@@ -79,5 +86,6 @@ make frontend-test
       "id": 1,
       "name": "Food"
     }
-  }' ``` </pre>
+  }'
+```
 
