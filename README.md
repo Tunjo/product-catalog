@@ -1,6 +1,6 @@
 # Product Catalog
 
-A full-stack product catalog application with a **backend** (Spring Boot), **frontend** (React with Vite). The project is containerized with Docker and managed using a `Makefile`.
+A full-stack product catalog application with a **backend** (Spring Boot), **frontend** (React). The project is containerized with Docker and managed using a `Makefile`.
 
 ---
 
