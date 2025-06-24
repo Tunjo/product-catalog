@@ -52,7 +52,12 @@ make frontend-test
 - http://localhost:8080/h2-console
   - JDBC_URL: jdbc:h2:mem:testdb
 
-### PayPal Sandbox user for checking payment in app
+### PayPal Sandbox user that can be used for PayPal payment
 
 - sb-5kkrg43498490@personal.example.com
 - NwMQz#1}
+
+### Admin-controller
+- On admin routes pls use in memory user credentials (that was part that have plan to make frontend admin part and protect product & category create, update and delete methods; TODO: make front part of admin page)
+-   Username: adminOGCS
+-   Password: adminOGCS123
