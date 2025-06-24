@@ -58,6 +58,26 @@ make frontend-test
 - NwMQz#1}
 
 ### Admin-controller
+- http://localhost:8080/swagger-ui/index.html#/admin-controller
 - On admin routes pls use in memory user credentials (that was part that have plan to make frontend admin part and protect product & category create, update and delete methods; TODO: make front part of admin page)
 -   Username: adminOGCS
 -   Password: adminOGCS123
+- We can use also curl with credentials:
+- Create new product:
+-  <pre> ```bash curl -X POST \
+  'http://localhost:8080/api/admin/products' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -u adminOGCS:adminOGCS123 \
+  -d '{
+    "name": "Orange",
+    "description": "Some lazy description",
+    "price": 10,
+    "imageUrl": "",
+    "quantity": 10,
+    "category": {
+      "id": 1,
+      "name": "Food"
+    }
+  }' ``` </pre>
+
