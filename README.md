@@ -5,6 +5,15 @@ The project is fully containerized with Docker and managed using a `Makefile`.
 
 ---
 
+## Clone the Project
+
+```bash
+git clone https://github.com/Tunjo/product-catalog.git
+cd product-catalog
+```
+
+---
+
 ## Prerequisites
 
 - [Docker](https://www.docker.com/)
