@@ -21,11 +21,11 @@ public class SecurityConfig {
                 .frameOptions(frameOptions -> frameOptions.sameOrigin())
             )
             .authorizeHttpRequests(auth -> auth
-                /* .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .requestMatchers("/api/admin/**").hasRole("ADMIN")
                 .requestMatchers(
                     "/swagger-ui/**",
                     "/v3/api-docs/**"
-                ).permitAll() */
+                ).permitAll()
                 .anyRequest().permitAll()
             )
             .httpBasic();
@@ -40,11 +40,14 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
-        return new InMemoryUserDetailsManager(
+        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager(
             User.withUsername("adminOGCS")
                 .password(passwordEncoder.encode("adminOGCS123"))
                 .roles("ADMIN")
                 .build()
         );
+        boolean userExists = manager.userExists("adminOGCS");
+        System.out.println("adminOGCS user exists: " + userExists);
+        return manager;
     }
 }
